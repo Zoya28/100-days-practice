@@ -37,7 +37,6 @@ else:
     rand_number = rd.randint(0,2)
     print("computer choose:",game_choice[rand_number])
     
-    
     if choice == rand_number:
         print("it's a draw...")
     elif choice==2 and rand_number == 0:
