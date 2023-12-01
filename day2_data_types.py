@@ -39,4 +39,3 @@ total = (bill+bill*tip/100)/split
 # final= round(total , 2)
 final = "{:.2f}".format(total)
 print("each person should pay ",final)
-
