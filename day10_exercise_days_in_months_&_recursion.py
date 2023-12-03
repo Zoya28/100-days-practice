@@ -26,3 +26,16 @@ year=int(input("Enter a year: "))
 month = int(input("Enter a month: "))
 days = days_in_month(year,month)
 print(days)
+
+# when a function calls itself, it is called recursion.
+def factorial(x):
+    """This is a recursive function
+    to find the factorial of an integer"""
+
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x-1))
+
+num = 3
+print("The factorial of", num, "is", factorial(num))
