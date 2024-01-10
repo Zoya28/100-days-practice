@@ -1,3 +1,4 @@
+'''It is a list of dictionaries in which all the data is stored'''
 data = [
     {
         'name': 'Instagram',
