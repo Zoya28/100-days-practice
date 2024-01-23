@@ -29,10 +29,9 @@ def check_answer(comp,guess):
         return 0
 def game():
     print(logo)
-    print("welcome to the Number guessing game! ")
+    print("\nwelcome to the Number guessing game! ")
     print("I am thinking of a number between 1 and 100")
     computer_guess = randint(1,100)
-    print(f"the number is {computer_guess}")
     attempts = difficulty_level()
     while attempts != 0:
         print(f"\nyou have {attempts} attempts left.")
@@ -43,4 +42,6 @@ def game():
         attempts-=1
     if answer != 0 :
         print("you ran out of guesses. you loose!\n")
+    print(f"the number is {computer_guess}\n")
+
 game()

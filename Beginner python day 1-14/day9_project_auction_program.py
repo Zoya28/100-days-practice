@@ -29,7 +29,7 @@ def high_bid(record):
 record={}
 it_continues = True
 while it_continues:
-  name = input("Whai is your name?  ")
+  name = input("What is your name?  ")
   bid = int(input("What is your Bid?  "))
   record[name] = bid
   new_bidder=input("Are there any other bidders? Type 'yes' or 'no'\n")
