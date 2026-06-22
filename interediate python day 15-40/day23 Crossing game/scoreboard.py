@@ -7,7 +7,8 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.level = 1
-        self.highest_level = 1
+        with open("data.txt", "r") as data:
+            self.highest_level = int(data.read())
         self.hideturtle()
         self.penup()
         self.goto(-290,250)
@@ -22,7 +23,9 @@ class Scoreboard(Turtle):
         self.update_scoreboard()
 
     def reset(self):
-        if self.level>self.highest_level:
+        if self.level> self.highest_level:
             self.highest_level = self.level
+            with open("data.txt", "w") as data:
+                data.write(str(self.highest_level))
         self.level = 1
         self.update_scoreboard()
